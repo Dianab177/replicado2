@@ -1,14 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .container{
     width: 100vw;
     height: 10vh;
     height: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .menu{
     display: flex;
@@ -37,6 +34,22 @@ color: beige;
 .link{
     color: black;
 }
+.banner1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.phone{
+    height: 500px;
+    width: auto;
+    position: absolute;
+}
+.phone-div{
+    display: flex;
+}
+h1{
+    font-weight: bold;
+}
 li{
     margin: 10px;
 }
@@ -45,4 +58,21 @@ a{
 }
 ul{
     list-style: none;
+}
+iconify-icon{
+    margin-right: 10px;
+}
+.circle-content{
+position: absolute;
+width: 500px;
+height: 500px;
+border-radius: 100%;
+background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+}
+.cross{
+    transform: rotate(3.142rad);
+    margin:0 10px 50px 0;
+}
+.circle{
+    margin: 30px 50px;
 }
