@@ -1,3 +1,51 @@
+.animation {
+  line-height: 400px;
+  height: 500px;
+  width: 175px;
+  position: relative;
+  z-index: -1;
+}
+
+.animation:before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%;
+  -webkit-animation: fill 7s ease-in-out infinite;
+          animation: fill 7s ease-in-out infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes fill {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes fill {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   padding: 0;
   margin: 0;
@@ -5,16 +53,21 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-direction: column;
 }
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  height: 70px;
+  width: 100%;
+  height: 8%;
   box-shadow: 0px 3px rgba(228, 228, 228, 0.8);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
 }
 
 .link-menu {
@@ -27,13 +80,12 @@
   color: black;
   font-weight: bold;
   text-decoration: none;
+  margin-right: 370px;
 }
 
 .buttom {
-  background-color: blue;
-  margin: 15px 20px;
+  padding: 15px 20px;
   border-radius: 50px;
-  color: beige;
 }
 
 .link {
@@ -42,29 +94,45 @@
 
 .banner1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   justify-items: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin-top: 100px;
 }
 
 .phone {
   height: 500px;
   width: auto;
+  margin: 0 auto;
 }
 
 .phone-div {
+  width: 100%;
   display: flex;
   position: block;
+  align-items: center;
+}
+
+.text-banner {
+  width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text-group {
+  display: block;
 }
 
 h1 {
   font-weight: bold;
+  font-size: 3.5rem;
+  font-family: "Newsreader";
 }
 
 li {
-  margin: 10px;
+  margin: 0 20px;
 }
 
 a {
@@ -76,5 +144,5 @@ ul {
 }
 
 iconify-icon {
-  margin-right: 10px;
+  margin-right: 12px;
 }/*# sourceMappingURL=style.css.map */

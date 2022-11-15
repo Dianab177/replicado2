@@ -1,0 +1,42 @@
+.animation {
+  height: 500px;
+  width: 175px;
+  position: relative;
+  z-index: -1;
+}
+
+.animation:before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%;
+  -webkit-animation-fill-mode: 7s ease-in-out infinite;
+          animation-fill-mode: 7s ease-in-out infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes animation-fill-mode {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes animation-fill-mode {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}/*# sourceMappingURL=anitation.css.map */
