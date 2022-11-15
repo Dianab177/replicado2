@@ -45,13 +45,19 @@ body{
   .link {
     color: black;
   }
-  .banner1 {
+  .banner-1 {
     display: flex;
     justify-content:space-around;
     justify-items: center;
     align-items: center;
     width: 100vw;
     margin-top: 100px;
+  }
+  .banner-2{
+    background-image: url("banner-2.jpg");
+    width: 100vw;
+    height: auto;
+    padding-right: 10%;
   }
   .phone {
     height: 500px;
@@ -63,6 +69,7 @@ body{
     display: flex;
     position: block;
     align-items: center;
+
   }
   .text-banner{
     width: 100%;
