@@ -50,14 +50,21 @@ body{
     justify-content:space-around;
     justify-items: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     margin-top: 100px;
   }
+  .div-margin{
+    display: inline-block;
+    height: 5vh;
+    width: 100%;
+  }
   .banner-2{
-    background-image: url("banner-2.jpg");
-    width: 100vw;
+    background-image: url("../images/banner-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
     height: auto;
-    padding-right: 10%;
   }
   .phone {
     height: 500px;
