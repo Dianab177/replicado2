@@ -83,15 +83,22 @@ body {
   justify-content: space-around;
   justify-items: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   margin-top: 100px;
 }
 
+.div-margin {
+  display: inline-block;
+  height: 5%;
+  width: 100%;
+}
+
 .banner-2 {
-  background-image: url("banner-2.jpg");
-  width: 100vw;
-  height: auto;
-  padding-right: 10%;
+  color: white;
+}
+
+.image-background {
+  height: 700px;
 }
 
 .phone {
@@ -119,7 +126,8 @@ body {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 600;
+  font-style: normal;
   font-size: 3.5rem;
   font-family: "Newsreader";
 }
