@@ -1,33 +1,42 @@
-@media(max-width:790px){
-    .banner-1{
-        flex-direction: column;
-    }
-    .banner2{
-        text-align: center;
-    }
-    .banner-3{
-        flex-direction: column;
-    }
-    footer{
-    height: fit-content;
-    }
-    .ul-footer{
+@media (max-width: 790px) {
+  #buttom-hidden {
+    transform: scale(0);
+  }
+
+  .banner-1 {
+    flex-direction: column;
+  }
+  .banner2 {
+    text-align: center;
+  }
+  .banner-3 {
+    flex-direction: column;
+  }
+  .img-icon {
+    height: 30px;
+  }
+  .ul-footer {
     flex-direction: column;
     justify-content: center;
-    }
-    .phone{
-        height: 5px;
-    }
-    h1{
-        font-size: 1rem;
-    }
-    h4{
-        font-size: 0.5rem;
-    }
-    .img-icon{
-        height: 30px;
-    }
-    li{
-        font-size: 0.7rem;
-    }
+    margin-bottom: 20vh;
+  }
+  .phone {
+    height: 150px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.5rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    font-size: 0.7rem;
+  }
+  footer {
+    height: 30vh;
+  }
 }

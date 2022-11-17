@@ -34,14 +34,12 @@ iconify-icon {
 footer {
   text-align: center;
   background-color: black;
-  height: 15vh;
+  height: 22vh;
   width: 100%;
   color: darkgrey;
-  padding-top: 30px;
-  margin-top: 10vh;
-  position: fixed;
-  bottom: 0px;
+  padding: 30px;
 }
+
 .container {
   padding: 0;
   margin: 0;
@@ -74,9 +72,6 @@ footer {
   font-weight: bold;
   text-decoration: none;
 }
-.link {
-  color: black;
-}
 .banner-1 {
   display: flex;
   justify-content: space-around;
@@ -85,10 +80,21 @@ footer {
   width: 100%;
   margin-top: 20vh;
 }
-.div-margin {
-  display: inline-block;
-  height: 5%;
+.text-banner {
   width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+.phone-div {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone {
+  height: 500px;
+  position: absolute;
 }
 .banner-2 {
   color: rgb(175, 174, 174);
@@ -103,16 +109,28 @@ footer {
 .content-banner2 {
   margin: 40vh 0 0 15vw;
 }
-.title-ul-banner-2 {
-  font-weight: 400;
-}
 .banner-3 {
   display: flex;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
   width: 100%;
-  margin-top: 20vh;
+  margin: 20vh 0;
+}
+.div-container-phone-2 {
+  align-self: center;
+  margin: 0 15vw;
+}
+.phone-div-2 {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-2 {
+  height: 500px;
+  position: absolute;
+  margin-right: 50px;
 }
 .banner-3-list {
   display: flex;
@@ -121,30 +139,12 @@ footer {
   text-align: center;
   margin-top: 5vh;
 }
-
 .img-icon {
   height: 60px;
   margin-bottom: 30px;
 }
-.phone {
-  height: 500px;
-  width: auto;
-  margin: 0 auto;
-  position: block;
-}
-.phone-div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.text-banner {
-  width: 100%;
-  align-content: center;
-  display: flex;
-  justify-content: center;
-}
-.text-group {
-  display: block;
+.link {
+  color: black;
 }
 .ul-footer {
   display: flex;
@@ -152,9 +152,9 @@ footer {
   align-items: center;
   color: darkgrey;
 }
-.link-github{
+.link-github {
   color: darkgrey;
 }
-.link-github:hover{
+.link-github:hover {
   color: #ffffff;
 }

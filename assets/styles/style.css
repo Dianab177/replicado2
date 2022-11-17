@@ -1,4 +1,7 @@
 @media (max-width: 790px) {
+  #buttom-hidden {
+    transform: scale(0);
+  }
   .banner-1 {
     flex-direction: column;
   }
@@ -8,17 +11,16 @@
   .banner-3 {
     flex-direction: column;
   }
-  footer {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .img-icon {
+    height: 30px;
   }
   .ul-footer {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 20vh;
   }
   .phone {
-    height: 5px;
+    height: 150px;
   }
   h1 {
     font-size: 1rem;
@@ -26,42 +28,96 @@
   h4 {
     font-size: 0.5rem;
   }
-  .img-icon {
-    height: 30px;
+  ul {
+    margin: 0;
+    padding: 0;
   }
   li {
     font-size: 0.7rem;
   }
+  footer {
+    height: 30vh;
+  }
 }
-/*.animation{
-   line-height: 400px;
-    height: 500px;
-    width: 175px;
-    position: relative;
-    z-index: -1;
+.box-animation {
+  width: 230px;
+  height: 480px;
+  border-radius: 10px;
+  line-height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.box-animation:before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: linear-gradient(108deg, rgb(251, 250, 45) 0.5%, rgb(214, 4, 4) 29.8%, rgb(241, 57, 221) 59.9%, rgb(95, 11, 228) 84.2%);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%;
+  -webkit-animation: fill 7s ease-in-out infinite;
+          animation: fill 7s ease-in-out infinite;
+  z-index: -1;
+}
+
+@-webkit-keyframes fill {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
   }
-  .animation:before{
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 800px;
-    background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89));
-    left:50%;
-    transform: translateX(-50%);
-    border-radius:40%;
-    animation:fill 7s ease-in-out infinite;
-    overflow: hidden;
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
   }
-  @keyframes fill {
-      from{
-        top:250px;
-        transform: translateX(-50%) rotate(0deg);
-      }
-      to{
-        top: -50px;
-        transform: translateX(-50%)rotate(360deg);
-      }
-  }*/
+}
+
+@keyframes fill {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.box-animation-2 {
+  width: 230px;
+  height: 480px;
+  border-radius: 15px;
+  line-height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 38px;
+}
+
+.box-animation-2:before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: linear-gradient(108deg, rgb(251, 250, 45) 0.5%, rgb(214, 4, 4) 29.8%, rgb(241, 57, 221) 59.9%, rgb(95, 11, 228) 84.2%);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%;
+  -webkit-animation: fill 7s ease-in-out infinite;
+          animation: fill 7s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes fill {
+  from {
+    top: 400px;
+    transform: translateX(-20%) rotate(0deg);
+  }
+  to {
+    top: -80px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -103,13 +159,10 @@ iconify-icon {
 footer {
   text-align: center;
   background-color: black;
-  height: 15vh;
+  height: 22vh;
   width: 100%;
   color: darkgrey;
-  padding-top: 30px;
-  margin-top: 10vh;
-  position: fixed;
-  bottom: 0px;
+  padding: 30px;
 }
 
 .container {
@@ -148,10 +201,6 @@ footer {
   text-decoration: none;
 }
 
-.link {
-  color: black;
-}
-
 .banner-1 {
   display: flex;
   justify-content: space-around;
@@ -161,10 +210,23 @@ footer {
   margin-top: 20vh;
 }
 
-.div-margin {
-  display: inline-block;
-  height: 5%;
+.text-banner {
   width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-div {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  height: 500px;
+  position: absolute;
 }
 
 .banner-2 {
@@ -182,17 +244,31 @@ footer {
   margin: 40vh 0 0 15vw;
 }
 
-.title-ul-banner-2 {
-  font-weight: 400;
-}
-
 .banner-3 {
   display: flex;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
   width: 100%;
-  margin-top: 20vh;
+  margin: 20vh 0;
+}
+
+.div-container-phone-2 {
+  align-self: center;
+  margin: 0 15vw;
+}
+
+.phone-div-2 {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-2 {
+  height: 500px;
+  position: absolute;
+  margin-right: 50px;
 }
 
 .banner-3-list {
@@ -208,28 +284,8 @@ footer {
   margin-bottom: 30px;
 }
 
-.phone {
-  height: 500px;
-  width: auto;
-  margin: 0 auto;
-  position: block;
-}
-
-.phone-div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.text-banner {
-  width: 100%;
-  align-content: center;
-  display: flex;
-  justify-content: center;
-}
-
-.text-group {
-  display: block;
+.link {
+  color: black;
 }
 
 .ul-footer {
