@@ -36,7 +36,6 @@ body {
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -47,13 +46,14 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #FFFFFF;
   width: 100%;
   height: 8%;
   box-shadow: 0px 3px rgba(228, 228, 228, 0.8);
-  overflow: hidden;
   position: fixed;
   top: 0;
   padding-top: 15px;
+  margin-bottom: 10vh;
 }
 
 .link-menu {
@@ -84,7 +84,7 @@ body {
   justify-items: center;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 20vh;
 }
 
 .div-margin {
@@ -95,22 +95,29 @@ body {
 
 .banner-2 {
   color: white;
+  background-image: url("../images/background_banner_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20vh;
 }
 
-.image-background {
-  height: 700px;
+.content-banner2 {
+  margin: 70vh 0 0 10vw;
 }
 
 .phone {
   height: 500px;
   width: auto;
   margin: 0 auto;
+  position: block;
 }
 
 .phone-div {
   width: 100%;
   display: flex;
-  position: block;
   align-items: center;
 }
 
