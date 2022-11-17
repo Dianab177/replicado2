@@ -1,3 +1,33 @@
 @media(max-width:790px){
-    
+    .banner-1{
+        flex-direction: column;
+    }
+    .banner2{
+        text-align: center;
+    }
+    .banner-3{
+        flex-direction: column;
+    }
+    footer{
+    height: fit-content;
+    }
+    .ul-footer{
+    flex-direction: column;
+    justify-content: center;
+    }
+    .phone{
+        height: 5px;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.5rem;
+    }
+    .img-icon{
+        height: 30px;
+    }
+    li{
+        font-size: 0.7rem;
+    }
 }
