@@ -1,0 +1,74 @@
+.box-animation {
+  width: 230px;
+  height: 480px;
+  border-radius: 10px;
+  line-height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.box-animation:before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: linear-gradient(
+    108deg,
+    rgb(251, 250, 45) 0.5%,
+    rgb(214, 4, 4) 29.8%,
+    rgb(241, 57, 221) 59.9%,
+    rgb(95, 11, 228) 84.2%
+  );
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%;
+  animation: fill 7s ease-in-out infinite;
+  z-index: -1;
+}
+@keyframes fill {
+  from {
+    top: 250px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: -50px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.box-animation-2 {
+  width: 230px;
+  height: 480px;
+  border-radius: 15px;
+  line-height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 38px;
+}
+.box-animation-2:before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: linear-gradient(
+    108deg,
+    rgb(251, 250, 45) 0.5%,
+    rgb(214, 4, 4) 29.8%,
+    rgb(241, 57, 221) 59.9%,
+    rgb(95, 11, 228) 84.2%
+  );
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%;
+  animation: fill 7s ease-in-out infinite;
+  z-index: -1;
+}
+@keyframes fill {
+  from {
+    top: 400px;
+    transform: translateX(-20%) rotate(0deg);
+  }
+  to {
+    top: -80px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
